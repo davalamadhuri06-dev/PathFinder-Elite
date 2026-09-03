@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <View
+        android:id="@+id/headerBase"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/header_gradient"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Elite Success"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerBase">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="40dp">
+
+            <!-- Success Stories -->
+            <TextView android:text="Success Blueprints" android:fontFamily="sans-serif-black" android:textSize="18sp" android:textColor="@color/black" android:layout_margin="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="2" android:alignmentMode="alignMargins">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSuccessStories"
+                    android:layout_width="0dp" android:layout_height="150dp" android:layout_columnWeight="1" android:layout_margin="8dp" app:cardCornerRadius="24dp" app:cardElevation="6dp" android:foreground="?attr/selectableItemBackground">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:id="@+id/ivGallerySuccess" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="Graduation Success"/>
+                        <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#666366F1"/>
+                        <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ic_graduation" android:layout_centerInParent="true" app:tint="@color/white" android:contentDescription="Icon"/>
+                        <TextView android:text="Success Stories" android:textColor="@color/white" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:padding="12dp" android:fontFamily="sans-serif-black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardInnovation"
+                    android:layout_width="0dp" android:layout_height="150dp" android:layout_columnWeight="1" android:layout_margin="8dp" app:cardCornerRadius="24dp" app:cardElevation="6dp" android:foreground="?attr/selectableItemBackground">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:id="@+id/ivGalleryInnovation" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="Innovation Success"/>
+                        <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#6610B981"/>
+                        <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ic_innovation" android:layout_centerInParent="true" app:tint="@color/white" android:contentDescription="Icon"/>
+                        <TextView android:text="Innovation" android:textColor="@color/white" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:padding="12dp" android:fontFamily="sans-serif-black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+            <!-- Skills & Mastery (Replaced Education) -->
+            <TextView android:text="Skills &amp; Mastery" android:fontFamily="sans-serif-black" android:textSize="18sp" android:textColor="@color/black" android:layout_margin="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="2" android:alignmentMode="alignMargins">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardEducation"
+                    android:layout_width="0dp" android:layout_height="130dp" android:layout_columnWeight="1" android:layout_margin="8dp" app:cardCornerRadius="24dp" app:cardElevation="6dp" android:foreground="?attr/selectableItemBackground">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:id="@+id/ivGalleryEducation" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="Skills"/>
+                        <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#660EA5E9"/>
+                        <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_professions" android:layout_centerInParent="true" app:tint="@color/white" android:contentDescription="Icon"/>
+                        <TextView android:text="Elite Skills" android:textColor="@color/white" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:padding="10dp" android:fontFamily="sans-serif-black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSurveying"
+                    android:layout_width="0dp" android:layout_height="130dp" android:layout_columnWeight="1" android:layout_margin="8dp" app:cardCornerRadius="24dp" app:cardElevation="6dp" android:foreground="?attr/selectableItemBackground">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:id="@+id/ivGallerySurvey" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="Surveying"/>
+                        <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#66F43F5E"/>
+                        <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_surveying" android:layout_centerInParent="true" app:tint="@color/white" android:contentDescription="Icon"/>
+                        <TextView android:text="Surveying" android:textColor="@color/white" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:padding="10dp" android:fontFamily="sans-serif-black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+            <!-- Professions & Videos -->
+            <TextView android:text="Global Professions &amp; Videos" android:fontFamily="sans-serif-black" android:textSize="18sp" android:textColor="@color/black" android:layout_margin="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMasterclass"
+                android:layout_width="match_parent" android:layout_height="220dp" android:layout_margin="8dp" app:cardCornerRadius="32dp" app:cardElevation="8dp" android:foreground="?attr/selectableItemBackground">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/ivGalleryMasterclass" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="Professions Overview"/>
+                    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#666366F1"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_centerInParent="true" android:gravity="center">
+                        <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/ic_professions" app:tint="@color/white" android:contentDescription="Icon"/>
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_media_play" android:layout_marginTop="12dp" app:tint="@color/white" android:contentDescription="Play"/>
+                    </LinearLayout>
+                    <TextView android:text="Watch Career Masterclasses" android:textColor="@color/white" android:textSize="20sp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:padding="20dp" android:fontFamily="sans-serif-black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

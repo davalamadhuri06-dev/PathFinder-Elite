@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <View
+        android:id="@+id/headerBase"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/header_gradient"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Success Blueprints"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_menu_dots"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Menu" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerBase">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingBottom="40dp">
+
+            <!-- Software Engineering Roadmap -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="8dp">
+                <LinearLayout android:padding="28dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/premium_card_bg">
+                    <TextView android:text="💻 Software Engineer Masterclass" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="@color/primary_accent" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 1: High School (10th-12th)" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Choose Science Stream (MPC: Maths, Physics, Chemistry).\n• Focus on Logical Reasoning and basic Algorithms." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 2: Competitive Entrance" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Prepare for JEE Mains &amp; Advanced (for IITs/NITs).\n• Clear state-level CETs for reputable engineering colleges." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 3: Graduation (B.Tech/B.E)" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Enroll in Computer Science or IT Engineering.\n• Master Data Structures (DSA) and at least 2 languages (Java/Python)." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 4: Professional Launch" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Build a GitHub Portfolio with personal projects.\n• Apply for internships and crack Product-based company interviews." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Medical Roadmap -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="8dp">
+                <LinearLayout android:padding="28dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/premium_card_bg">
+                    <TextView android:text="🩺 Medical Doctor (MBBS) Path" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="#E11D48" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 1: Foundation (11th-12th)" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Choose BiPC Stream (Biology, Physics, Chemistry).\n• Deep focus on Human Physiology and Genetics." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 2: The Gateway (NEET)" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Appear for NEET UG Exam.\n• Secure a high rank to enter Government Medical Colleges." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 3: MBBS Degree (5.5 Years)" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Complete 4.5 years of academic study + 1 year of Internship.\n• Gain hands-on clinical experience in various departments." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 4: Specialization (MD/MS)" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Appear for NEET PG.\n• Choose a specialty like Cardiology, Surgery, or Neurology." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- IAS Roadmap -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="8dp">
+                <LinearLayout android:padding="28dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/premium_card_bg">
+                    <TextView android:text="🏛️ Civil Services (IAS) Strategy" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="#CA8A04" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 1: Preparation Early On" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Choose any stream (Arts/Humanities is highly beneficial).\n• Develop a habit of reading daily National News." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 2: Graduate in Any Discipline" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Complete your Bachelor's degree (mandatory for UPSC).\n• Start focused UPSC coaching or self-study during final years." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 3: The UPSC Examination" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Clear Prelims, Mains, and the Final Interview.\n• Master General Studies and one Optional Subject." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 4: Training at LBSNAA" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Undergo specialized training in administration.\n• Begin your journey as an Assistant Collector/Magistrate." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CA Roadmap -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="8dp">
+                <LinearLayout android:padding="28dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/premium_card_bg">
+                    <TextView android:text="📈 Chartered Accountant (CA) Path" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="#4338CA" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 1: Foundation (after 12th)" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Register for CA Foundation after 12th Exams.\n• Focus on Accounting, Law, and Economics." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 2: CA Intermediate" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Clear both groups of CA Intermediate.\n• Start 3 years of mandatory Articleship training." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 3: CA Final" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Appear for CA Final exams during last 6 months of training.\n• Master Advanced Auditing and Strategic Finance." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Data Science Roadmap -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="8dp">
+                <LinearLayout android:padding="28dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/premium_card_bg">
+                    <TextView android:text="📊 Data Scientist Elite Guide" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="#10B981" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 1: Mathematics &amp; Stats" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Strong grip on Linear Algebra, Calculus, and Probability.\n• Essential foundation for Machine Learning." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 2: Programming Skills" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Master Python/R and SQL for data manipulation.\n• Learn libraries like Pandas, NumPy, and Scikit-Learn." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:text="\nStep 3: Machine Learning &amp; AI" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="• Build models for Prediction, Classification, and Clustering.\n• Work on real-world datasets from Kaggle." android:textSize="13sp" android:textColor="@color/text_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

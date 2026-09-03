@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <View
+        android:id="@+id/headerBase"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/header_gradient"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Global Career Report"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_menu_dots"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Menu" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerBase">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingBottom="40dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="15dp">
+                <LinearLayout
+                    android:padding="40dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/premium_card_bg">
+
+                    <TextView
+                        android:text="OFFICIAL ELITE ANALYSIS"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-black"
+                        android:letterSpacing="0.2"
+                        android:textColor="@color/primary_accent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tvReportSummary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Based on your performance in the Discovery Engine and Aptitude Quiz, your profile aligns with 'High-Yield Intelligence' sectors."
+                        android:textColor="@color/text_title"
+                        android:fontFamily="serif"
+                        android:lineSpacingExtra="6dp"
+                        android:textSize="17sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#F1F5F9"
+                        android:layout_marginVertical="32dp"/>
+
+                    <TextView
+                        android:text="SECTOR COMPATIBILITY"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/text_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ProgressBar
+                        android:id="@+id/progressReport"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="16dp"
+                        android:progress="85"
+                        android:progressTint="@color/accent_vibrant"/>
+
+                    <TextView
+                        android:text="Strategic Alignment: 85%"
+                        android:layout_marginTop="8dp"
+                        android:textSize="13sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/text_body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="\n\nMASTER RECOMMENDATION"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/text_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="You are recommended for 'The Architect' path in Science or 'The Strategist' path in Commerce. Proceed to Mentorship enrollment."
+                        android:textColor="@color/text_title"
+                        android:fontFamily="serif-italic"
+                        android:textSize="15sp"/>
+
+                    <Button
+                        android:id="@+id/btnDownloadReport"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="40dp"
+                        android:text="DOWNLOAD FULL REPORT"
+                        android:backgroundTint="@color/primary_premium"
+                        android:fontFamily="sans-serif-black"
+                        app:cornerRadius="18dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

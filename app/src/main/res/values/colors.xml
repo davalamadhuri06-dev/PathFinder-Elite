@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Luxury Premium Palette -->
+    <color name="primary_premium">#FFFFFF</color> <!-- White -->
+    <color name="primary_accent">#000000</color>  <!-- Changed to Black for consistency -->
+    <color name="secondary_accent">#F59E0B</color> <!-- Golden Amber -->
+    <color name="accent_vibrant">#10B981</color>  <!-- Emerald Green -->
+    <color name="accent_purple">#A855F7</color>   <!-- Vibrant Purple -->
+    <color name="accent_rose">#F43F5E</color>     <!-- Vibrant Rose -->
+    <color name="accent_sky">#0EA5E9</color>      <!-- Vibrant Sky Blue -->
+    <color name="accent_orange">#FB923C</color>   <!-- Vibrant Orange -->
+
+    <color name="bg_main">#FFFFFF</color>         <!-- Visible White Background -->
+    <color name="bg_header">#FFFFFF</color>       <!-- Header White -->
+
+    <color name="card_surface">#F1F5F9</color>     <!-- Light Slate Cards -->
+    <color name="text_title">#000000</color>      <!-- Absolute Black -->
+    <color name="text_body">#000000</color>       <!-- Absolute Black -->
+    <color name="text_light">#1E293B</color>      <!-- Dark Slate -->
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Bento Grid Category Colors (Subtle & Modern) -->
+    <color name="glass_white">#CCFFFFFF</color>
+    <color name="category_quiz">#EEF2FF</color>    <!-- Soft Indigo -->
+    <color name="category_exam">#F0F9FF</color>    <!-- Soft Sky -->
+    <color name="category_career">#FAF5FF</color>  <!-- Soft Purple -->
+    <color name="category_scholar">#ECFDF5</color> <!-- Soft Emerald -->
+    <color name="category_success">#FFF1F2</color> <!-- Soft Rose -->
+
+    <!-- Legacy support (to avoid immediate breakage if referenced) -->
+    <color name="primary_dark">#0F172A</color>
+    <color name="primary_light">#6366F1</color>
+    <color name="bg_soft">#FFFFFF</color>
+    <color name="quiz_bg">#EEF2FF</color>
+    <color name="exams_bg">#F0F9FF</color>
+    <color name="career_bg">#FAF5FF</color>
+    <color name="scholarship_bg">#ECFDF5</color>
+    <color name="text_main">#1E293B</color>
+    <color name="text_sub">#475569</color>
+</resources>

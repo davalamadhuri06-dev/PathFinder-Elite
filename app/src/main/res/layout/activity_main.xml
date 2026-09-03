@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <!-- Premium Animated Header -->
+    <View
+        android:id="@+id/headerBase"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="PathFinder Elite"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:textSize="32sp"
+        android:letterSpacing="-0.02"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHeaderSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next-Gen Career Intelligence"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="true"
+        android:letterSpacing="0.1"
+        app:layout_constraintStart_toStartOf="@id/tvAppTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvAppTitle" />
+
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_menu_dots"
+        app:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/tvAppTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvAppTitle"
+        android:contentDescription="Menu" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProfile"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvAppTitle"
+        app:layout_constraintEnd_toStartOf="@id/btnMenu"
+        app:layout_constraintTop_toTopOf="@id/tvAppTitle">
+        <TextView
+            android:id="@+id/tvProfileInitial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="P"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-black"
+            android:background="@color/primary_accent"
+            android:textColor="@color/white"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Identity Card (Floating Carousel) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIdentity"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvHeaderSubtitle">
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoStart="true"
+            android:flipInterval="3000"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right">
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/ivCarousel1" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="Success Background"/>
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#66000000"/>
+                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/ic_graduation" android:layout_centerInParent="true" app:tint="@color/white" android:contentDescription="Success Icon"/>
+                <TextView android:text="UNLOCK YOUR POTENTIAL" android:textColor="@color/white" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="20dp" android:fontFamily="sans-serif-black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/ivCarousel2" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="Innovation Background"/>
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#66000000"/>
+                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/ic_innovation" android:layout_centerInParent="true" app:tint="@color/white" android:contentDescription="Innovation Icon"/>
+                <TextView android:text="EXPLORE NEW FRONTIERS" android:textColor="@color/white" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="20dp" android:fontFamily="sans-serif-black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/ivCarousel3" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="Career Background"/>
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#66000000"/>
+                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/ic_professions" android:layout_centerInParent="true" app:tint="@color/white" android:contentDescription="Career Icon"/>
+                <TextView android:text="CRAFT YOUR ELITE FUTURE" android:textColor="@color/white" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="20dp" android:fontFamily="sans-serif-black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </ViewFlipper>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ELITE PATHFINDER JOURNEY"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Main Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:clipToPadding="false"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintTop_toBottomOf="@id/cardIdentity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingBottom="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intelligent Explorer"
+                android:textColor="@color/text_title"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Motivational Quote Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardQuote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp"
+                    android:background="@drawable/premium_card_bg"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/tvQuoteText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/default_quote"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="italic"
+                        android:gravity="center"
+                        android:lineSpacingExtra="4dp"/>
+                    <TextView
+                        android:id="@+id/tvQuoteAuthor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/footer_author"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"
+                        android:textAllCaps="true"
+                        android:letterSpacing="0.1"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardRoadmap"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="24dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🧭"
+                        android:textSize="48sp"
+                        android:layout_marginEnd="20dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Success Blueprints"
+                            android:textSize="20sp"
+                            android:fontFamily="sans-serif-black"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Step-by-step career roadmaps"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCareer"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+                <LinearLayout android:paddingHorizontal="28dp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:text="🔭" android:textSize="36sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:text="Stream Master Guide" android:fontFamily="sans-serif-black" android:textSize="18sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:text="Choices after 10th &amp; 12th" android:textSize="13sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardScholarship"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+                <LinearLayout android:paddingHorizontal="28dp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:text="💎" android:textSize="36sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:text="Elite Funding" android:fontFamily="sans-serif-black" android:textSize="18sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:text="Scholarships &amp; Grants" android:textSize="13sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardExams"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+                <LinearLayout android:paddingHorizontal="28dp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:text="📖" android:textSize="36sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:text="Global Exam Prep" android:fontFamily="sans-serif-black" android:textSize="18sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:text="Cracking elite entrances" android:textSize="13sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/cardCompare" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="16dp" app:cardCornerRadius="32dp" app:cardElevation="2dp" app:cardBackgroundColor="@color/white">
+                <LinearLayout android:paddingHorizontal="28dp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:text="⚖️" android:textSize="36sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:text="Career Comparison" android:fontFamily="sans-serif-black" android:textSize="18sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:text="Compare your top choices" android:textSize="13sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView android:text="Elite Success Stories" android:textColor="@color/text_title" android:fontFamily="sans-serif-black" android:layout_marginTop="32dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                app:cardCornerRadius="24dp"
+                app:cardBackgroundColor="@color/card_surface"
+                app:cardElevation="4dp">
+
+                <ViewFlipper
+                    android:id="@+id/flipperSuccessStories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoStart="true"
+                    android:flipInterval="3000"
+                    android:inAnimation="@android:anim/fade_in"
+                    android:outAnimation="@android:anim/fade_out">
+
+                    <LinearLayout android:orientation="horizontal" android:padding="24dp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView android:layout_width="60dp" android:layout_height="60dp" app:cardCornerRadius="30dp" app:cardElevation="2dp" android:layout_marginEnd="16dp">
+                            <ImageView android:id="@+id/ivSuccess1" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/header_gradient" android:contentDescription="Karan"/>
+                        </androidx.cardview.widget.CardView>
+                        <TextView android:text="⭐ Karan: From 10th grade doubt to IIT Bombay Computer Science. 'PathFinder roadmaps were my guide to success.'" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/text_body" android:lineSpacingExtra="4dp" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:orientation="horizontal" android:padding="24dp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView android:layout_width="60dp" android:layout_height="60dp" app:cardCornerRadius="30dp" app:cardElevation="2dp" android:layout_marginEnd="16dp">
+                            <ImageView android:id="@+id/ivSuccess2" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/header_gradient" android:contentDescription="Sarah"/>
+                        </androidx.cardview.widget.CardView>
+                        <TextView android:text="⭐ Sarah: Secured 100% Scholarship in the US for Genomic Medicine. 'The AI Advisor found my true niche!'" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/text_body" android:lineSpacingExtra="4dp" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:orientation="horizontal" android:padding="24dp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView android:layout_width="60dp" android:layout_height="60dp" app:cardCornerRadius="30dp" app:cardElevation="2dp" android:layout_marginEnd="16dp">
+                            <ImageView android:id="@+id/ivSuccess3" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/header_gradient" android:contentDescription="Rahul"/>
+                        </androidx.cardview.widget.CardView>
+                        <TextView android:text="⭐ Rahul: From a small village to Senior Lead at Google London. 'PathFinder bridges the gap for rural talent.'" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/text_body" android:lineSpacingExtra="4dp" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:orientation="horizontal" android:padding="24dp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView android:layout_width="60dp" android:layout_height="60dp" app:cardCornerRadius="30dp" app:cardElevation="2dp" android:layout_marginEnd="16dp">
+                            <ImageView android:id="@+id/ivSuccess4" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/header_gradient" android:contentDescription="Ananya"/>
+                        </androidx.cardview.widget.CardView>
+                        <TextView android:text="⭐ Ananya: Cracked UPSC in first attempt. 'The current affairs and ethics modules in Elite were spot on!'" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/text_body" android:lineSpacingExtra="4dp" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:orientation="horizontal" android:padding="24dp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView android:layout_width="60dp" android:layout_height="60dp" app:cardCornerRadius="30dp" app:cardElevation="2dp" android:layout_marginEnd="16dp">
+                            <ImageView android:id="@+id/ivSuccess5" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/header_gradient" android:contentDescription="Vikram"/>
+                        </androidx.cardview.widget.CardView>
+                        <TextView android:text="⭐ Vikram: Built a $1M EdTech startup at 19. 'I found my co-founders and initial vision right here in the PathFinder community.'" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/text_body" android:lineSpacingExtra="4dp" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:orientation="vertical" android:padding="28dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:text="⭐ Neha: Selected for ISRO Space Program. 'The roadmap for Aerospace Engineering was incredibly detailed and accurate.'" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_body" android:lineSpacingExtra="4dp" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+                    </LinearLayout>
+
+                </ViewFlipper>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/floating_nav_bg"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="25dp"
+        app:elevation="30dp"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:itemIconSize="28dp"
+        app:itemPaddingBottom="8dp"
+        app:itemPaddingTop="12dp"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

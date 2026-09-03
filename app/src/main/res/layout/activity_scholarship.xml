@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <View
+        android:id="@+id/headerBase"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/header_gradient"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Premium Funding"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:textSize="28sp"
+        android:letterSpacing="-0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_menu_dots"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Menu" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerBase">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingBottom="40dp">
+
+            <!-- NSP Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="8dp">
+                <LinearLayout android:padding="28dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/category_scholar">
+                    <TextView android:text="National Portal (NSP)" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="#065F46" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="The official gateway to government-backed financial excellence." android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#065F46" android:textSize="14sp"/>
+                    <Button
+                        android:id="@+id/btnLinkNSP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ACCESS PORTAL"
+                        android:layout_marginTop="16dp"
+                        android:backgroundTint="#059669"
+                        android:fontFamily="sans-serif-black"
+                        app:cornerRadius="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- PM-YASASVI Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="8dp">
+                <LinearLayout android:padding="28dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#FFFBEB">
+                    <TextView android:text="PM-YASASVI Elite" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="#92400E" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Top-tier education funding for visionaries of tomorrow." android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#92400E" android:textSize="14sp"/>
+                    <Button
+                        android:id="@+id/btnLinkYasasvi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CLAIM SCHOLARSHIP"
+                        android:layout_marginTop="16dp"
+                        android:backgroundTint="@color/secondary_accent"
+                        android:fontFamily="sans-serif-black"
+                        app:cornerRadius="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- UGC Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="8dp">
+                <LinearLayout android:padding="28dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#F0FDF4">
+                    <TextView android:text="UGC Ishan Uday" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="#166534" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Specialized funding for the North Eastern Region leaders." android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#166534" android:textSize="14sp"/>
+                    <Button
+                        android:id="@+id/btnLinkUGC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIEW PRIVILEGES"
+                        android:layout_marginTop="16dp"
+                        android:backgroundTint="#22C55E"
+                        android:fontFamily="sans-serif-black"
+                        app:cornerRadius="12dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

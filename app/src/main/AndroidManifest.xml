@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pathfinder2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.PathFinder2"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".LoginActivity" android:exported="false" />
+        <activity android:name=".RegisterActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".SubjectAnalyzerActivity" android:exported="false" />
+        <activity android:name=".AiChatActivity" android:exported="false" />
+        <activity android:name=".RoadmapActivity" android:exported="false" />
+        <activity android:name=".SDGActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".CareerDetailsActivity" />
+        <activity android:name=".SurveyActivity" />
+        <activity android:name=".ViewResultsActivity" />
+        <activity android:name=".ScholarshipActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".ExamsActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".TrendingActivity" />
+        <activity android:name=".CareerComparisonActivity" />
+        <activity android:name=".ResumeBuilderActivity" />
+        <activity android:name=".SkillGapActivity" />
+        <activity android:name=".CareerReportActivity" />
+        <activity android:name=".FeedbackActivity" android:exported="false" />
+        <activity android:name=".GalleryActivity" android:exported="false" />
+        <activity android:name=".GalleryDetailActivity" android:exported="false" />
+        <activity android:name=".MentorshipExpertActivity" android:exported="false" />
+        <activity android:name=".PortfolioSubmissionActivity" android:exported="false" />
+        <activity android:name=".CaseStudyActivity" android:exported="false" />
+    </application>
+</manifest>

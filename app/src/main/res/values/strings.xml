@@ -1,0 +1,301 @@
+<resources>
+    <string name="app_name">PathFinder Elite</string>
+    <string name="hint_enter_name">Enter your name</string>
+    <string name="btn_submit">ACTIVATE PROFILE</string>
+    <string name="error_enter_name">Please identify yourself</string>
+    <string name="welcome_message">Welcome %s!</string>
+
+    <!-- Admin & Navigation -->
+    <string name="admin_title">Admin Authentication</string>
+    <string name="admin_prompt">Enter security pin to access the database:</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_about">About</string>
+    <string name="nav_community">Community</string>
+    <string name="nav_feedback">Feedback</string>
+    <string name="nav_explore">Explore</string>
+
+    <string name="title_ai">PathFinder Elite</string>
+    <string name="subtitle_ai">Hyper-Personalized Guidance</string>
+    <string name="desc_menu">Menu</string>
+    <string name="hint_update_goal">Update your goal&#8230;</string>
+    <string name="btn_update_guidance">UPDATE GUIDANCE MODE</string>
+    <string name="title_explorer">Intelligent Explorer</string>
+    <string name="title_ai_advisor">Career Matcher</string>
+    <string name="subtitle_ai_advisor">Elite guidance for your future</string>
+    <string name="title_quiz">Aptitude\nQuiz</string>
+    <string name="title_roadmap">Step-by-Step\nRoadmaps</string>
+    <string name="title_stream">Stream Suggestion</string>
+    <string name="subtitle_stream">10th / 12th Master Guide</string>
+    <string name="title_exam_tips">Exam Prep\nTips</string>
+    <string name="title_scholarship">Elite\nFunding</string>
+    <string name="default_quote">Excellence is not a skill. It is an attitude.</string>
+
+    <string name="profile_initial_placeholder">P</string>
+    <string name="emoji_ai">🎯</string>
+    <string name="emoji_quiz">🧠</string>
+    <string name="emoji_roadmap">🧭</string>
+    <string name="emoji_stream">🔭</string>
+    <string name="emoji_exam">📖</string>
+    <string name="emoji_scholarship">💎</string>
+    <string name="quote_start">❝</string>
+
+    <!-- Career Details - Science -->
+    <string name="career_sci_title">Science &amp; Technology</string>
+    <string name="career_sci_info">Pursue Engineering, Medical, or Research. Requires deep understanding of Physics and Math/Biology.</string>
+    <string name="career_sci_salary">₹8L &#8211; ₹40L+</string>
+    <string name="career_sci_duration">4&#8211;5 Years</string>
+    <string name="career_sci_difficulty">High</string>
+    <string name="career_sci_colleges">1. IIT Bombay\n2. AIIMS Delhi\n3. BITS Pilani</string>
+    <string name="career_sci_exams">• JEE Main &amp; Advanced\n• NEET (Medical)</string>
+    <string name="career_sci_story">\"Arjun, a farmer\'s son, cleared JEE with self-study and is now studying at IIT.\"</string>
+    <string name="career_sci_books">• Concepts of Physics by H.C. Verma\n• NCERT Textbooks</string>
+
+    <!-- Career Details - Commerce -->
+    <string name="career_com_title">Commerce &amp; Business</string>
+    <string name="career_com_info">Focus on CA, Management, and Finance. Perfect for students interested in economics.</string>
+    <string name="career_com_salary">₹6L &#8211; ₹30L</string>
+    <string name="career_com_duration">3&#8211;5 Years</string>
+    <string name="career_com_difficulty">Medium</string>
+    <string name="career_com_colleges">1. SRCC Delhi\n2. IIM Indore (IPM)\n3. St. Xavier\'s</string>
+    <string name="career_com_exams">• CA Foundation\n• IPMAT (Management)</string>
+    <string name="career_com_story">\"Sneha cleared CA in her first attempt while balancing her father\'s shop accounts.\"</string>
+    <string name="career_com_books">• Accountancy by T.S. Grewal\n• Economics (NCERT)</string>
+
+    <!-- Career Details - Arts -->
+    <string name="career_art_title">Arts &amp; Social Sciences</string>
+    <string name="career_art_info">Excellent for Law, Design, and Civil Services. Focuses on social impact.</string>
+    <string name="career_art_salary">₹4L &#8211; ₹25L</string>
+    <string name="career_art_duration">3 Years</string>
+    <string name="career_art_difficulty">Moderate</string>
+    <string name="career_art_colleges">1. NLSIU Bangalore\n2. NID Ahmedabad\n3. JNU Delhi</string>
+    <string name="career_art_exams">• CLAT (Law)\n• NID DAT (Design)\n• UPSC</string>
+    <string name="career_art_story">\"Ravi studied Law to help villagers with legal rights. He is now a Human Rights lawyer.\"</string>
+    <string name="career_art_books">• Indian Polity by M. Laxmikanth\n• Grammar (Wren &amp; Martin)</string>
+
+    <!-- Career Details - Vocational -->
+    <string name="career_voc_title">Vocational &amp; Skills</string>
+    <string name="career_voc_info">Master hands-on skills in Animation, Culinary Arts, or Aviation. Focuses on practical expertise and immediate employment.</string>
+    <string name="career_voc_salary">₹4L &#8211; ₹20L</string>
+    <string name="career_voc_duration">1&#8211;3 Years</string>
+    <string name="career_voc_difficulty">Moderate</string>
+    <string name="career_voc_colleges">1. IHM Pusa (Culinary)\n2. IGRUA (Aviation)\n3. Arena Animation</string>
+    <string name="career_voc_exams">• NCHMCT JEE (Hotel Mgmt)\n• Portfolio Reviews</string>
+    <string name="career_voc_story">\"Leo followed his passion for cooking and is now an Executive Chef at a luxury hotel.\"</string>
+    <string name="career_voc_books">• Professional Chef by CIA\n• Principles of Flight</string>
+    <string name="career_voc_roadmap">10th/12th → Skill Diploma → Apprenticeship → Master Professional</string>
+    <string name="career_voc_day">Morning: Hands-on training or kitchen prep.\nAfternoon: Service management or project work.\nEvening: Skill refinement and industry networking.</string>
+
+    <!-- Login Screen -->
+    <string name="login_welcome">Welcome Back</string>
+    <string name="login_authorize">AUTHORIZE YOUR SESSION</string>
+    <string name="login_hint_email">Email Address</string>
+    <string name="login_hint_password">Security Password</string>
+    <string name="login_btn_secure">SECURE LOGIN</string>
+    <string name="login_btn_register">New explorer? Register here</string>
+
+    <!-- Register Screen -->
+    <string name="reg_title">Join the Elite</string>
+    <string name="reg_subtitle">CREATE YOUR MASTER ACCOUNT</string>
+    <string name="reg_hint_name">Full Name</string>
+    <string name="reg_hint_email">Email Address</string>
+    <string name="reg_hint_password">Security Password</string>
+    <string name="reg_btn_secure">SECURE REGISTRATION</string>
+    <string name="reg_btn_login">Already have an account? Login</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_default_name">Elite Member</string>
+    <string name="profile_default_email">authorized@pathfinder.com</string>
+    <string name="profile_status_format">Status: %s</string>
+    <string name="dashboard_welcome">Welcome, %s!</string>
+
+    <!-- View Results Screen -->
+    <string name="results_title">Control Center</string>
+    <string name="results_hint_search">Search master database&#8230;</string>
+    <string name="results_hint_app_id">Request ID</string>
+    <string name="results_btn_approve">APPROVE MENTOR</string>
+
+    <!-- Trending Careers -->
+    <string name="title_trending">Trending Global Careers</string>
+    <string name="career_trending_1">Data Science &amp; Tech</string>
+    <string name="career_trending_2">Sustainable Energy</string>
+    <string name="career_trending_3">UI/UX Psychology</string>
+    <string name="career_trending_4">Genomic Medicine</string>
+
+    <!-- Career Matcher -->
+    <string name="matcher_title">Elite Matcher</string>
+    <string name="matcher_subtitle">SWIPE YOUR INTERESTS</string>
+    <string name="desc_interested">Interested</string>
+    <string name="desc_not_interested">Not Interested</string>
+
+    <!-- Marvellous Upgrades -->
+    <string name="title_readiness">Elite Career Readiness</string>
+    <string name="readiness_desc">Your profile is 65% complete</string>
+    <string name="title_stories">Elite Success Stories</string>
+    <string name="story_1">Karan: From 10th grade doubt to IIT Bombay.</string>
+    <string name="story_2">Sarah: How she secured a 100% Scholarship.</string>
+    <string name="story_3">Rahul: From small village to Google London.</string>
+    <string name="btn_match_now">MATCH NOW</string>
+    <string name="readiness_percentage">65%</string>
+    <string name="title_elite_pass">Elite PathFinder Pass</string>
+    <string name="elite_pass_desc">Unlocked: Access to Global Mentors</string>
+    <string name="emoji_star">⭐</string>
+
+    <!-- Trending Career Details -->
+    <string name="trending_ai_title">Data Science &amp; Tech</string>
+    <string name="trending_ai_info">Analyze big data and build intelligent systems. The most in-demand field globally.</string>
+    <string name="trending_ai_salary">₹12L &#8211; ₹80L+</string>
+    <string name="trending_ai_duration">4 Years (B.Tech/B.Sc)</string>
+    <string name="trending_ai_colleges">1. Stanford\n2. IIT Delhi\n3. MIT</string>
+
+    <string name="trending_energy_title">Sustainable Energy</string>
+    <string name="trending_energy_info">Focus on solar, wind, and green technology to save the planet. High growth area.</string>
+    <string name="trending_energy_salary">₹10L &#8211; ₹45L</string>
+    <string name="trending_energy_duration">4 Years (B.Tech)</string>
+    <string name="trending_energy_colleges">1. TU Delft\n2. ETH Zurich\n3. IIT Madras</string>
+
+    <string name="trending_ux_title">UI/UX Psychology</string>
+    <string name="trending_ux_info">Design digital experiences that people love by understanding human behavior.</string>
+    <string name="trending_ux_salary">₹8L &#8211; ₹35L</string>
+    <string name="trending_ux_duration">3&#8211;4 Years</string>
+    <string name="trending_ux_colleges">1. NID Ahmedabad\n2. RISD\n3. IDC IITB</string>
+
+    <!-- Career Details Labels -->
+    <string name="label_roadmap">📍 Career Roadmap</string>
+    <string name="label_day_in_life">🕒 A Day in the Life</string>
+
+    <!-- Science Roadmap & Day in Life -->
+    <string name="career_sci_roadmap">10th (MPC/BiPC) → 12th Board → Entrance (JEE/NEET) → Specialization → Professional Career</string>
+    <string name="career_sci_day">Morning: Lab experiments or coding sessions.\nAfternoon: Analyzing data and research reports.\nEvening: Project documentation and learning new tech.</string>
+
+    <!-- Commerce Roadmap & Day in Life -->
+    <string name="career_com_roadmap">10th (Commerce) → 12th → Professional Course (CA/CS) or Graduation → MBA → Business Leader</string>
+    <string name="career_com_day">Morning: Checking market trends and financial emails.\nAfternoon: Client meetings and audit reports.\nEvening: Balancing accounts and strategic planning.</string>
+
+    <!-- Arts Roadmap & Day in Life -->
+    <string name="career_art_roadmap">10th (Humanities) → 12th → Creative Degree (Design/Law) → Portfolio Building → Impactful Career</string>
+    <string name="career_art_day">Morning: Creative brainstorming or case study reading.\nAfternoon: Designing prototypes or field research.\nEvening: Networking and presenting vision to stakeholders.</string>
+
+    <!-- Trending Details Extensions -->
+    <string name="career_ai_roadmap">10th (MPC) → B.Tech CS → Learn Python → Certifications → Engineer at Big Tech</string>
+    <string name="career_ai_day">Morning: Debugging ML models and training data.\nAfternoon: Architecture meetings and algorithm tuning.\nEvening: Deployment tracking and GitHub contributions.</string>
+
+    <string name="career_energy_roadmap">10th (MPC) → B.Tech Electrical/Mechanical → M.Tech Green Tech → Renewable Industry Specialist</string>
+    <string name="career_energy_day">Morning: On-site solar/wind farm inspections.\nAfternoon: Energy efficiency simulations on software.\nEvening: Government policy research and grid planning.</string>
+
+    <string name="career_ux_roadmap">10th (Any) → Design Degree (B.Des) → Psychology Study → Freelancing → UI/UX Lead Designer</string>
+    <string name="career_ux_day">Morning: User interview analysis and wireframing.\nAfternoon: High-fidelity visual design and prototyping.\nEvening: Usability testing and developer hand-off.</string>
+
+    <!-- MCQ Quiz Content -->
+    <string name="quiz_q1">What interests you most?</string>
+    <string name="quiz_q1_o1">Solving Math &amp; Logic puzzles</string>
+    <string name="quiz_q1_o2">Trading &amp; Business ideas</string>
+    <string name="quiz_q1_o3">Designing &amp; Social work</string>
+
+    <string name="quiz_q2">What is your main career goal?</string>
+    <string name="quiz_q2_o1">Inventing new technology</string>
+    <string name="quiz_q2_o2">Managing wealth &amp; growth</string>
+    <string name="quiz_q2_o3">Impacting society &amp; people</string>
+
+    <string name="quiz_q3">Preferred working environment?</string>
+    <string name="quiz_q3_o1">Advanced Tech Labs</string>
+    <string name="quiz_q3_o2">Corporate High-rises</string>
+    <string name="quiz_q3_o3">Creative Studios or Courts</string>
+
+    <string name="quiz_q4">Which subject is easiest for you?</string>
+    <string name="quiz_q4_o1">Physics or Chemistry</string>
+    <string name="quiz_q4_o2">Economics or Accountancy</string>
+    <string name="quiz_q4_o3">Literature or Political Science</string>
+
+    <string name="quiz_q5">How do you prefer to solve problems?</string>
+    <string name="quiz_q5_o1">Using Data and Equations</string>
+    <string name="quiz_q5_o2">Using Strategy and Markets</string>
+    <string name="quiz_q5_o3">Using Intuition and Empathy</string>
+
+    <string name="quiz_q6">Do you prefer working with?</string>
+    <string name="quiz_q6_o1">Software &amp; Codes</string>
+    <string name="quiz_q6_o2">Product Sales &amp; Growth</string>
+    <string name="quiz_q6_o3">People\'s Welfare</string>
+
+    <!-- Skill Gap & College Finder -->
+    <string name="title_skill_gap">Skill Gap Checker</string>
+    <string name="desc_skill_gap">Analyze what you need to improve</string>
+    <string name="title_college_finder">Nearby Colleges</string>
+    <string name="desc_college_finder">Find top institutions in your area</string>
+    <string name="hint_enter_location">Enter your Village/City</string>
+    <string name="btn_find_colleges">FIND INSTITUTIONS</string>
+    <string name="skill_coding">Do you know any programming languages?</string>
+    <string name="skill_comm">Rate your communication skills (1-10)</string>
+    <string name="skill_result_format">Recommendation: Focus on %s</string>
+    <string name="btn_start_assessment">START ASSESSMENT</string>
+    <string name="emoji_location">📍</string>
+
+    <!-- Career Match Result -->
+    <string name="title_match_result">Top Talent Match</string>
+    <string name="match_compatibility">Compatibility: 98%</string>
+    <string name="btn_claim_destiny">CLAIM THIS DESTINY</string>
+    <string name="emoji_crown">👑</string>
+
+    <!-- Global Opportunities Feed -->
+    <string name="title_global_feed">Live: Global Opportunities</string>
+    <string name="news_1">New Internships at Google London</string>
+    <string name="news_2">Sustainable Energy Summit - Sweden 2024</string>
+    <string name="btn_generate_report">GENERATE CAREER REPORT</string>
+
+    <!-- Career Trends 2030 -->
+    <string name="title_trends_2030">Future Jobs (Year 2030)</string>
+    <string name="trend_2030_1">🤖 Robotics Engineer</string>
+    <string name="trend_2030_2">🔐 Cyber Security Lead</string>
+    <string name="trend_2030_3">🚀 Space Tourism Guide</string>
+
+    <!-- Personality & Badges -->
+    <string name="title_badges">Elite Badges Earned</string>
+    <string name="badge_explorer">🎓 Explorer</string>
+    <string name="badge_thinker">🧠 Smart Thinker</string>
+    <string name="badge_leader">👑 Future Leader</string>
+
+    <!-- Multi-language / Village Mode -->
+    <string name="btn_village_mode">VILLAGE MODE (TELUGU)</string>
+    <string name="village_welcome">మీ కెరీర్‌ను ఈరోజే ప్రారంభించండి (Start your career today)</string>
+
+    <!-- Salary Growth Labels -->
+    <string name="label_salary_growth">📈 5-Year Growth Potential</string>
+    <string name="growth_high">Very High (300% Avg.)</string>
+    <string name="growth_medium">High (150% Avg.)</string>
+
+    <!-- Project Comparison & Future -->
+    <string name="title_compare">⚖️ Compare Careers</string>
+    <string name="desc_compare">Stuck between two choices?</string>
+    <string name="premium_badge">PATHFINDER PREMIUM</string>
+    <string name="desc_voice">Voice Assistant</string>
+
+    <!-- Prize Winning Features -->
+    <string name="title_resume_builder">AI Resume Builder</string>
+    <string name="desc_resume_builder">Create your first elite resume</string>
+    <string name="title_mentor_connect">Mentor Connect</string>
+    <string name="desc_mentor_connect">Talk to industry experts</string>
+    <string name="title_mood_suggest">Mood Career</string>
+    <string name="desc_mood_suggest">Match your current vibe</string>
+    <string name="points_format">Career Points: %d</string>
+    <string name="streak_format">Daily Streak: %d Days</string>
+    <string name="discovery_goal">Discovery: Take the Aptitude Quiz</string>
+    <string name="placeholder_select_path">Select a Path</string>
+    <string name="footer_quote">❝ Your talent determines what you can do. Your motivation determines how much you are willing to do.</string>
+    <string name="footer_author">— Elite Career Wisdom</string>
+    <string name="nav_profile">Profile</string>
+    <string name="about_title">About PathFinder Elite</string>
+    <string name="about_desc">PathFinder Elite is an elite career guidance system designed to provide personalized roadmaps and mentorship simulations to students globally.</string>
+    <string name="strategy_format">Career Journey: %s</string>
+    <string name="label_discovery">Discovery Engine</string>
+    <string name="label_matcher">🎯 Skill Matcher</string>
+    <string name="label_aptitude">🧠 Aptitude</string>
+    <string name="label_comparison">⚖️ Career Comparison</string>
+    <string name="label_branding">PATHFINDER ELITE • 2024</string>
+    <string name="btn_match">MATCH</string>
+
+    <string-array name="features_array">
+        <item>Themed Assessment</item>
+        <item>AI Resume Builder</item>
+        <item>Career Roadmaps</item>
+        <item>Village Mode (Telugu)</item>
+    </string-array>
+</resources>

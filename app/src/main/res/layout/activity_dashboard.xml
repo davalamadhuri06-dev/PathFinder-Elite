@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <!-- Premium Header -->
+    <View
+        android:id="@+id/headerBase"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Choose Your Empire"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:textSize="28sp"
+        android:letterSpacing="-0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Master Guidance Hub"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="true"
+        android:letterSpacing="0.1"
+        app:layout_constraintStart_toStartOf="@id/tvWelcome"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_menu_dots"
+        app:tint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Menu" />
+
+    <!-- Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerBase">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingBottom="40dp">
+
+            <!-- Science -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardScience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="28dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🛰️" android:textSize="44sp" android:layout_marginEnd="24dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Science &amp; Tech" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="@color/black"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IIT, AIIMS, Research" android:textSize="13sp" android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Commerce -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCommerce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="28dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏦" android:textSize="44sp" android:layout_marginEnd="24dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Commerce &amp; Finance" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="@color/black"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CA, Banking, Business" android:textSize="13sp" android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Arts -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardArts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="28dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎭" android:textSize="44sp" android:layout_marginEnd="24dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Arts &amp; Humanities" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="@color/black"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Law, Design, UPSC" android:textSize="13sp" android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Emerging AI Fields -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="28dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🤖" android:textSize="44sp" android:layout_marginEnd="24dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Emerging AI Fields" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="@color/black"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Machine Learning, Robotics" android:textSize="13sp" android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Sustainable Energy -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardEnergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="28dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="☀️" android:textSize="44sp" android:layout_marginEnd="24dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sustainable Energy" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="@color/black"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Solar, Wind, Green Tech" android:textSize="13sp" android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- UI/UX Psychology -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardUX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="28dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎨" android:textSize="44sp" android:layout_marginEnd="24dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UI/UX Psychology" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="@color/black"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Design, User Behavior" android:textSize="13sp" android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Vocational -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardVocational"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="28dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🛠️" android:textSize="44sp" android:layout_marginEnd="24dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vocational &amp; Skills" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="@color/black"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Animation, Culinary, Aviation" android:textSize="13sp" android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnScholarships"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="EXPLORE PREMIUM SCHOLARSHIPS"
+                android:backgroundTint="@color/secondary_accent"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.05"
+                app:cornerRadius="20dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <!-- Premium Header -->
+    <View
+        android:id="@+id/headerBase"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/header_gradient"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSurveyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Experience Survey"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:textSize="28sp"
+        android:letterSpacing="-0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_menu_dots"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Menu" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerBase">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingBottom="40dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="4dp">
+                <LinearLayout android:padding="24dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/premium_card_bg">
+                    <TextView android:text="1. Quality of Insights" android:fontFamily="sans-serif-black" android:textSize="17sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Was this information helpful for your journey?" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text_body" android:textSize="13sp"/>
+                    <RadioGroup
+                        android:id="@+id/rgAwareness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+                        <RadioButton android:id="@+id/rbYes" android:text="Extremely Helpful" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium"/>
+                        <RadioButton android:id="@+id/rbNo" android:text="Needs Improvement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="4dp">
+                <LinearLayout android:padding="24dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/premium_card_bg">
+                    <TextView android:text="2. Future Roadmap" android:fontFamily="sans-serif-black" android:textSize="17sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="What elite feature should we architect next?" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text_body" android:textSize="13sp"/>
+                    <EditText
+                        android:id="@+id/etDreamJob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="e.g. 1-on-1 Mentorship, Video Vault"
+                        android:layout_marginTop="12dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingVertical="8dp"
+                        android:textColor="@color/text_title"
+                        android:textColorHint="@color/text_light"
+                        android:inputType="textLongMessage"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="4dp">
+                <LinearLayout android:padding="24dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/premium_card_bg">
+                    <TextView android:text="3. Brand Loyalty" android:fontFamily="sans-serif-black" android:textSize="17sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Would you recommend PathFinder to your circle?" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text_body" android:textSize="13sp"/>
+                    <RadioGroup
+                        android:id="@+id/rgInternet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+                        <RadioButton android:id="@+id/rbIntYes" android:text="Absolutely Yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium"/>
+                        <RadioButton android:id="@+id/rbIntNo" android:text="Currently Assessing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnSubmitSurvey"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="SUBMIT TO ARCHIVES"
+                android:backgroundTint="@color/primary_accent"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.05"
+                app:cornerRadius="20dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

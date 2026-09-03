@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer Ring -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M54,24A30,30 0,1 1,53.999,24Z"
+        android:strokeWidth="2"
+        android:strokeColor="#6366F1" />
+
+    <!-- Compass Needle (Indigo) -->
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M54,34 L59,54 L54,74 L49,54 Z" />
+
+    <!-- Highlighted Tip (White) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,34 L59,54 L54,54 L49,54 Z" />
+
+    <!-- Central Hub -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,51A3,3 0,1 1,53.999,51Z" />
+
+</vector>

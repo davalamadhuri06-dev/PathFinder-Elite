@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/premium_card_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:background="#E2E8F0"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ELITE MISSION CONTROL"
+            android:textColor="@color/primary_accent"
+            android:fontFamily="sans-serif-black"
+            android:textSize="12sp"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Elite Insight (Quotation) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#F1F5F9"
+            android:layout_marginBottom="24dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView android:text="❝" android:textSize="24sp" android:textColor="@color/primary_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                <TextView
+                    android:id="@+id/tvNavQuote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The best way to predict the future is to create it."
+                    android:textColor="@color/text_body"
+                    android:textSize="13sp"
+                    android:fontStyle="italic"
+                    android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Home -->
+        <LinearLayout
+            android:id="@+id/nav_home_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+            <TextView android:text="🏠" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:text="Executive Home" android:fontFamily="sans-serif-black" android:textColor="@color/text_title" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Return to main mission control" android:textColor="@color/text_light" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Skill Gap -->
+        <LinearLayout
+            android:id="@+id/nav_gap_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+            <TextView android:text="🛠️" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:text="Skill Gap Analysis" android:fontFamily="sans-serif-black" android:textColor="@color/text_title" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Identify and bridge your expertise gaps" android:textColor="@color/text_light" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- About -->
+        <LinearLayout
+            android:id="@+id/nav_about_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+            <TextView android:text="ℹ️" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:text="The Vision" android:fontFamily="sans-serif-black" android:textColor="@color/text_title" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Learn about the PathFinder mission" android:textColor="@color/text_light" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Feedback & Survey -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E2E8F0"
+            android:layout_marginVertical="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/nav_feedback_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground">
+            <TextView android:text="💬" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:text="App Feedback" android:fontFamily="sans-serif-black" android:textColor="@color/text_title" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Tell us how to improve your experience" android:textColor="@color/text_light" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

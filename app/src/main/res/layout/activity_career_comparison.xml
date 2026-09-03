@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <!-- Premium Header -->
+    <View
+        android:id="@+id/headerBase"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/header_gradient"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Career Comparison"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_menu_dots"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Menu" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerBase">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingBottom="40dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="10dp">
+                <LinearLayout
+                    android:padding="28dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/premium_card_bg">
+
+                    <TextView
+                        android:text="Select Careers to Compare"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerCareer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/input_box_bg"
+                        android:layout_marginBottom="16dp"/>
+
+                    <TextView
+                        android:text="VS"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@color/primary_accent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerCareer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/input_box_bg"
+                        android:layout_marginBottom="24dp"/>
+
+                    <Button
+                        android:id="@+id/btnCompare"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="ANALYZE COMPARISON"
+                        android:backgroundTint="@color/primary_accent"
+                        android:fontFamily="sans-serif-black"
+                        app:cornerRadius="18dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/layoutComparisonResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="24dp"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginBottom="16dp">
+                    <LinearLayout
+                        android:padding="24dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF">
+                        <TextView android:text="SALARY POTENTIAL" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/primary_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="0.1"/>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp" android:baselineAligned="false">
+                            <TextView android:id="@+id/tvSalaryC1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="15sp"/>
+                            <View android:layout_width="2dp" android:layout_height="match_parent" android:background="#CBD5E1" android:layout_marginHorizontal="12dp"/>
+                            <TextView android:id="@+id/tvSalaryC2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="15sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginBottom="16dp">
+                    <LinearLayout
+                        android:padding="24dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF">
+                        <TextView android:text="EDUCATION DURATION" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/primary_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="0.1"/>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp" android:baselineAligned="false">
+                            <TextView android:id="@+id/tvDurationC1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="15sp"/>
+                            <View android:layout_width="2dp" android:layout_height="match_parent" android:background="#CBD5E1" android:layout_marginHorizontal="12dp"/>
+                            <TextView android:id="@+id/tvDurationC2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="15sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginBottom="16dp">
+                    <LinearLayout
+                        android:padding="24dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF">
+                        <TextView android:text="KEY SKILLS" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/primary_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="0.1"/>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp" android:baselineAligned="false">
+                            <TextView android:id="@+id/tvSkillsC1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="15sp"/>
+                            <View android:layout_width="2dp" android:layout_height="match_parent" android:background="#CBD5E1" android:layout_marginHorizontal="12dp"/>
+                            <TextView android:id="@+id/tvSkillsC2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="15sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginBottom="16dp">
+                    <LinearLayout
+                        android:padding="24dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF">
+                        <TextView android:text="CAREER GROWTH" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/primary_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="0.1"/>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp" android:baselineAligned="false">
+                            <TextView android:id="@+id/tvGrowthC1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="15sp"/>
+                            <View android:layout_width="2dp" android:layout_height="match_parent" android:background="#CBD5E1" android:layout_marginHorizontal="12dp"/>
+                            <TextView android:id="@+id/tvGrowthC2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="15sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginBottom="16dp">
+                    <LinearLayout
+                        android:padding="24dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF">
+                        <TextView android:text="WORK ENVIRONMENT" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/primary_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="0.1"/>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp" android:baselineAligned="false">
+                            <TextView android:id="@+id/tvEnvironmentC1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="15sp"/>
+                            <View android:layout_width="2dp" android:layout_height="match_parent" android:background="#CBD5E1" android:layout_marginHorizontal="12dp"/>
+                            <TextView android:id="@+id/tvEnvironmentC2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="15sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginBottom="16dp">
+                    <LinearLayout
+                        android:padding="24dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF">
+                        <TextView android:text="FUTURE OUTLOOK" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/primary_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="0.1"/>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp" android:baselineAligned="false">
+                            <TextView android:id="@+id/tvOutlookC1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="15sp"/>
+                            <View android:layout_width="2dp" android:layout_height="match_parent" android:background="#CBD5E1" android:layout_marginHorizontal="12dp"/>
+                            <TextView android:id="@+id/tvOutlookC2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="15sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginBottom="32dp">
+                    <LinearLayout
+                        android:padding="24dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF">
+                        <TextView android:text="PROS &amp; CONS" android:fontFamily="sans-serif-black" android:textSize="14sp" android:textColor="@color/primary_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="0.1"/>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp" android:baselineAligned="false">
+                            <TextView android:id="@+id/tvProsConsC1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="14sp"/>
+                            <View android:layout_width="2dp" android:layout_height="match_parent" android:background="#CBD5E1" android:layout_marginHorizontal="12dp"/>
+                            <TextView android:id="@+id/tvProsConsC2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/black" android:fontFamily="sans-serif-medium" android:gravity="center" android:textSize="14sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

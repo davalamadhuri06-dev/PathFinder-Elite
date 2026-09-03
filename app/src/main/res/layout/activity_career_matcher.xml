@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/header_gradient"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMatcherTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/matcher_title"
+        android:textColor="@color/text_title"
+        android:fontFamily="sans-serif-black"
+        android:textSize="32sp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/matcher_subtitle"
+        android:textColor="@color/text_body"
+        android:textSize="12sp"
+        android:letterSpacing="0.2"
+        app:layout_constraintTop_toBottomOf="@id/tvMatcherTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardInterest"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvMatcherTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="32dp"
+            android:background="@drawable/premium_card_bg">
+
+            <TextView
+                android:id="@+id/tvInterestEmoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🚀"
+                android:textSize="80sp" />
+
+            <TextView
+                android:id="@+id/tvInterestTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Space Exploration"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/primary_accent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvInterestDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you dream of building rockets or discovering new planets?"
+                android:textSize="16sp"
+                android:textColor="@color/text_body"
+                android:layout_marginTop="12dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/cardInterest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:backgroundTint="#FEE2E2"
+            app:tint="#EF4444"
+            app:fabSize="normal"
+            android:contentDescription="@string/desc_not_interested" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/checkbox_on_background"
+            app:backgroundTint="#DCFCE7"
+            app:tint="#22C55E"
+            app:fabSize="normal"
+            android:contentDescription="@string/desc_interested" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
